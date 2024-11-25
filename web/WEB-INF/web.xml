@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+                             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+         version="3.0">
+
+    <!-- 配置 ThreeParams Servlet -->
+    <servlet>
+        <servlet-name>ThreeParams</servlet-name>
+        <servlet-class>ThreeParams</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ThreeParams</servlet-name>
+        <url-pattern>/ThreeParams</url-pattern>
+    </servlet-mapping>
+
+    <!-- 配置 ShowMessage Servlet -->
+    <servlet>
+        <servlet-name>ShowMessage</servlet-name>
+        <servlet-class>ShowMessage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowMessage</servlet-name>
+        <url-pattern>/ShowMessage</url-pattern>
+    </servlet-mapping>
+
+    <!-- 配置 paramsForm（使用的表单路径） -->
+    <servlet>
+        <servlet-name>ParamsForm</servlet-name>
+        <servlet-class>ThreeParams</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ParamsForm</servlet-name>
+        <url-pattern>/paramsForm</url-pattern>
+    </servlet-mapping>
+
+</web-app>
